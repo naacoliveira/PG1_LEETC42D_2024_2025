@@ -23,9 +23,9 @@ int main ()
 
     //3. Calcular a média
     float media;
-    //media = (nota_teorica + nota_pratica) / 2;
-    //media = (nota_teorica + nota_pratica) / 2.0;
-    media = (float)(nota_teorica + nota_pratica) / 2;
+    //media = (nota_pratica + nota_teorica)/2;        // divisão inteira pq ambos operando inteiros
+    //media = (nota_pratica + nota_teorica) / 2.0;    // divisão real pq 2º operado real: 2.0
+    media = (float)(nota_pratica + nota_teorica)/2;   // divisão real pq 1º operado real: (float)(nota_pratica + nota_teorica)
 
     // 4. Apresentar Média
     printf("Nota teórica lida = %06d\n", nota_teorica);
